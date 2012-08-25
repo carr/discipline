@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+DISCIPLINE_ROOT = File.join(File.dirname(File.expand_path(__FILE__)), '..')
+$:.unshift File.join(DISCIPLINE_ROOT, 'lib')
+require "rubygems"
+require "bundler/setup"
+
+# gems and libraries
+require 'yaml'
+require 'thor'
+
+# local classes
+require 'discipline'
+
+# run with thor
+Discipline::App.start
