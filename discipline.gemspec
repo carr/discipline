@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Tomislav Car']
   s.email       = ['tomislav@infinum.hr']
   s.homepage    = 'http://github.com/carr/discipline'
+  s.require_paths = ["lib"]
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }  
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")  
