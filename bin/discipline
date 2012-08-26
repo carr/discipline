@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
-DISCIPLINE_ROOT = File.join(File.dirname(File.expand_path(__FILE__)), '..')
-$:.unshift File.join(DISCIPLINE_ROOT, 'lib')
 require "rubygems"
 require "bundler/setup"
+
+DISCIPLINE_ROOT = File.join(File.dirname(File.expand_path(__FILE__)), '..')
+$:.unshift File.join(DISCIPLINE_ROOT, 'lib')
 
 # gems and libraries
 require 'yaml'
